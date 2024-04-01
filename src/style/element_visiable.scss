@@ -1,0 +1,106 @@
+/* 全局设置dialog水平垂直居中 */
+// .el-dialog {
+//   /* 导致有一些属性不生效*/
+//   // top: 50%;
+//   // left: 50%;
+//   // margin: 0px !important;
+//   // transform: translate(-50%, -50%);
+// }
+/* 全局设置dialog滚动条 */
+.el-dialog__wrapper {
+  overflow: auto;
+  text-align: center;
+  white-space: nowrap;
+  &:after {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+  }
+  .el-dialog {
+    display: inline-block;
+    margin: 30px auto !important;
+    text-align: left;
+    white-space: normal;
+    vertical-align: middle;
+  }
+  &::-webkit-scrollbar {
+    width: 3px !important;
+    height: 7px !important;
+  }
+}
+
+.gva-pagination {
+  display: flex;
+  justify-content: space-between;
+  .el-pagination__editor {
+    .el-input__inner {
+      height: 32px;
+    }
+  }
+  .el-pagination__total {
+    line-height: 32px !important;
+  }
+  //小屏幕不显示
+  @media (max-width: 750px) {
+    .el-pagination__sizes {
+      display: none !important;
+    }
+  }
+  .btn-prev {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding-right: 6px;
+  }
+  .number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  }
+  .btn-quicknext {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  }
+  .btn-next {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding-left: 6px;
+  }
+  // 兼容久版用户升级
+  .active {
+    color: #ffffff !important;
+    background: #4d70ff;
+    border-radius: 2px;
+  }
+  .el-pager li.active + li {
+    border-left: 1px solid #ddd !important;
+  }
+  // end
+
+  .is-active {
+    color: #ffffff !important;
+    background: #4d70ff;
+    border-radius: 2px;
+  }
+  .el-pager li.is-active + li {
+    border-left: 1px solid #ddd !important;
+  }
+  .el-pagination__sizes {
+    .el-input {
+      .el-input__suffix {
+        margin-top: 2px;
+      }
+    }
+  }
+}

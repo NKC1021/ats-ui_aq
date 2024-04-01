@@ -1,0 +1,129 @@
+.aqlabel-view {
+  width: 100%;
+  height: 100%;
+  header {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+.left-nav{
+  display: flex;
+}
+    .right-btns {
+      text-align: right;
+      .el-checkbox {
+        height: 25px;
+        margin-right: 10px;
+      }
+      .select-label {
+        width: 130px;
+        margin: 0 10px 0 5px;
+      }
+      .span-css {
+        margin-left: 10px;
+        line-height: 32px;
+      }
+      .el-input-number {
+        width: 100px;
+        margin-left: 5px;
+      }
+    }
+  }
+  .aqlabel-body {
+    box-sizing: border-box;
+    display: flex;
+    height: calc(100% - 49px - 39px);
+    overflow: hidden;
+    background-color: #fff;
+    .img-single-display {
+      position: relative;
+      box-sizing: border-box;
+      width: calc(100% - 0px);
+      height: 100%;
+      // border-right: none;
+      // background-color: #fce5e5;
+      background-color: #f7f7f7;
+      border: 5px solid white;
+      // .canvas-container{
+      //   :deep(){
+      //     span{
+      //         border-top-color: red !important;
+      //       }
+      //   }
+      // }
+      .label-tag {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        font-size: 24px;
+        line-height: 80px;
+        color: #fff;
+        text-align: center;
+      }
+      .x-y-tag {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 190px;
+        height: 40px;
+        font-size: 11px;
+        line-height: 40px;
+        color: #fff;
+        text-align: center;
+        background-color: rgb(165 165 165 / 50%);
+      }
+      .segment-tag-ok {
+        background-color: #1fac3f80;
+      }
+      .segment-tag-ng {
+        background-color: #ff0f3780;
+      }
+    }
+  }
+  footer {
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #fff;
+
+    .el-pagination {
+      justify-content: right;
+      margin: 0;
+    }
+  }
+}
+.select-tag-tip {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+.annotation-operate{
+  display: inline-flex;
+  height: 30px;
+  border: 1px solid transparent;
+  position: relative;
+  top: 2px;
+  box-sizing: border-box;
+  .tool-btn-box{
+    margin: 0 3px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    &:hover{
+      // background-color: #f67d7d;
+      cursor: pointer;
+      color: var(--el-color-primary);
+    }
+   
+  }
+  .tool-btn-box--active{
+    background: #f5f6fc;
+    color: var(--el-color-primary);
+  }
+}
